@@ -1,69 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  --gold: linear-gradient(90deg, #F9A93F 0%, #A86B28 100%);
+  --goldDark: #A86B28;
+  --green: linear-gradient(90deg, #008E45 0%, #003E0E 100%);
+  --greenDark: #003B0C;
+  --b100: #263238;
+  --b87: #101828;
+  --b60: rgba(0, 0, 0, 0.60);
+  --b24: rgba(0, 0, 0, 0.24);
+  --white: #fff
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+#root {
+  width: 100%;
+  font-family: 'Almarai', sans-serif;
 }
 
-body {
-  margin: 0;
+header {
+  direction: rtl;
+  width: 100%;
+  padding: 16px 108px;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 0.5px solid var(--b24);
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+header .actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+
+a.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Almarai;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  border-radius: 32px;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+a.btn.p {
+  background-image: var(--green);
+  color: var(--white);
+}
+
+a.btn.s {
+  color: var(--greenDark);
+  border: 1px solid var(--greenDark);
+}
+
+/*********************Mob********************/
+@media (max-width: 767px) {
+  header {
+    padding: 16px 16px;
   }
-  a:hover {
-    color: #747bff;
+
+  header img {
+    height: 48px;
+    width: auto;
   }
-  button {
-    background-color: #f9f9f9;
+
+  header .actions :nth-child(2) {
+    display: none;
   }
 }
