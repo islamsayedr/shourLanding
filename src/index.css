@@ -103,6 +103,70 @@ header .actions {
   gap: 12px;
 }
 
+/* Values ********************/
+section.value {
+  direction: rtl;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 108px;
+  gap: 20px;
+  max-width: 1440px;
+  margin: auto;
+}
+
+section.value .illu {
+  width: 50%;
+  height: auto;
+  padding: 36px 112px;
+}
+
+section.value .content a {
+  width: fit-content;
+  flex-direction: row-reverse;
+}
+
+section.value .content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+section.value .content .text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+section.value .content .text .head {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+section.value .content .text .head span {
+  color: var(--goldDark);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+section.value .content .text .head h2 {
+  color: var(--b100);
+  font-family: Almarai;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 56px;
+}
+
+section.value .content .text p {
+  color: var(--b60);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
 /*********************Mob********************/
 @media (max-width: 767px) {
 
@@ -143,4 +207,25 @@ header .actions {
     flex-direction: column-reverse;
     width: 100%;
   }
+
+  /* value ********************/
+  section.value {
+    flex-direction: column-reverse !important;
+    padding: 48px 16px;
+    gap: 40px;
+  }
+
+  section.value .illu {
+    padding: 20px 20px;
+    width: 100%;
+  }
+
+  section.value .content {
+    width: 100%;
+  }
+  section.value .content .text .head h2 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  
 }
