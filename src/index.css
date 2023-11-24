@@ -167,6 +167,41 @@ section.value .content .text p {
   line-height: 28px;
 }
 
+/* Bannar ********************/
+section.bannar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 88px 108px;
+  max-width: 1440px;
+  margin: auto;
+}
+
+section.bannar .container {
+  width: 100%;
+  padding: 64px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+  border-radius: 16px;
+  background: var(--green);
+}
+
+section.bannar .container div {
+  color: #FFF;
+  text-align: center;
+  font-size: 56px;
+  font-weight: 800;
+  line-height: normal;
+}
+
+section.bannar .container a {
+  background: #FFF;
+  border: none;
+}
+
 /*********************Mob********************/
 @media (max-width: 767px) {
 
@@ -223,9 +258,23 @@ section.value .content .text p {
   section.value .content {
     width: 100%;
   }
+
   section.value .content .text .head h2 {
     font-size: 28px;
     line-height: 40px;
   }
-  
+
+  /* Bannar ********************/
+  section.bannar {
+    padding: 32px 16px;
+  }
+  section.bannar .container{
+    gap: 24px;
+  }
+  section.bannar .container div {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 56px;
+  }
+
 }

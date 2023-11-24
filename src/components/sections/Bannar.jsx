@@ -1,3 +1,18 @@
+import Btn from "../base/Btn";
+
 export default function Bannar() {
-  return <div>Bannar</div>;
+  return (
+    <section className="bannar">
+      <div className="container">
+        <div>اطلع على باقات الاشتراك</div>
+        <Btn
+          text="ابدأ الان"
+          icon="./icons/arrowLeftDark.svg"
+          link="#"
+          type="s"
+          size="m"
+        />
+      </div>
+    </section>
+  );
 }
