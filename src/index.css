@@ -147,9 +147,9 @@ section.value .content .text .head {
 
 section.value .content .text .head span {
   color: var(--goldDark);
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 24px;
+  font-size: 24px; /* uptitle*/
+  font-weight: 400;
+  line-height: 40px;
 }
 
 section.value .content .text .head h2 {
