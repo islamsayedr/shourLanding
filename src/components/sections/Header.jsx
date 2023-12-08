@@ -5,8 +5,8 @@ export default function Header() {
     <header>
       <img src="./logoColored.svg" alt="Shour logo" />
       <div className="actions">
-        <Btn text="انشاء حساب" icon="" link="#" type="p" size="m"/>
-        <Btn text="تسجيل دخول" icon="" link="#" type="s" size="m"/>
+        <Btn text="انشاء حساب" icon="" link="https://go.shour.app" type="p" size="m"/>
+        <Btn text="تسجيل دخول" icon="" link="https://go.shour.app" type="s" size="m"/>
       </div>
     </header>
   );

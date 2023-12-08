@@ -15,8 +15,8 @@ export default function Hero() {
         </p>
       </div>
       <div className="actions">
-        <Btn text="تعرف على المزيد" link="#" type="s" size="lg" icon="./icons/arrowDown.svg"/>
-        <Btn text="ابدأ الان" link="#" type="p" size="lg" icon="./icons/arrowLeft.svg"/>
+        <Btn text="تعرف على المزيد" link="#values" type="s" size="lg" icon="./icons/arrowDown.svg"/>
+        <Btn text="ابدأ الان" link="https://go.shour.app" type="p" size="lg" icon="./icons/arrowLeft.svg"/>
       </div>
     </section>
   );

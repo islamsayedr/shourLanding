@@ -51,7 +51,7 @@ export default function Values() {
 
 function Value({ dir, illu, title, des, name }) {
   return (
-    <section className="value" style={{ flexDirection: dir }}>
+    <section id="values" className="value" style={{ flexDirection: dir }}>
       <div className="content">
         <div className="text">
           <div className="head">
@@ -63,7 +63,7 @@ function Value({ dir, illu, title, des, name }) {
         <Btn
           text="ابدأ الان"
           icon="./icons/arrowLeftDark.svg"
-          link="#"
+          link="https://go.shour.app"
           type="s"
           size="m"
         />

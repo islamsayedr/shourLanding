@@ -8,7 +8,7 @@ export default function Bannar() {
         <Btn
           text="ابدأ الان"
           icon="./icons/arrowLeftDark.svg"
-          link="#"
+          link="https://go.shour.app"
           type="s"
           size="m"
         />
